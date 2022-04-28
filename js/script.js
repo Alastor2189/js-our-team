@@ -52,6 +52,8 @@ let userInformation = "";
 for (let i = 0; i < team.length; i++) {
     userInformation = team[i];
     console.log(userInformation.name, userInformation.role, userInformation.image);
-
-
+    // MILESTONE 2:
+    //     stampare le stesse informazioni su DOM sottoforma di stringhe
+    const string = document.getElementById("team");
+    string.innerHTML += `${"Name Member:"} ${userInformation.name} <br> ${"Role member:"} ${userInformation.role} <br><img src="img/${userInformation.image}" alt="${userInformation.name}"><br><br> `;
 }
